@@ -5,7 +5,7 @@ After=syslog.target network-online.target
 
 [Service]
 Type=simple
-# Duplicacy needs a folder to store it's metadata, credentials, etc and it won't directly take an argument for it, so this "fakes" is.
+# Duplicacy needs a folder to store it's metadata, credentials, etc and it won't directly take an argument for it, so this "fakes" it
 Environment="HOME=/opt/duplicacy-web"
 User=root
 ExecStart=/usr/bin/duplicacy-web
